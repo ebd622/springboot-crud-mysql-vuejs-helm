@@ -7,6 +7,8 @@ secret:
   host: aGstbXlzcWw=
   password: aGVsbG9rb2Rpbmc=
 
+cm:
+  roothost: '%'
 
 replicaCount: 1
 

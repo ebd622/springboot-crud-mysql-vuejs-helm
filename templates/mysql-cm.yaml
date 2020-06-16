@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  roothost: '{{ .Values.cm.roothost }}'
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: mysql-config
