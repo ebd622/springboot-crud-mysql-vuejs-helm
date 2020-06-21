@@ -35,7 +35,10 @@ helm history crud-app
 ```
 
 **4. Run tests**
-TODO
+
+```
+helm test crud-app
+```
 
 **5. Uninstall the chart**
 ```

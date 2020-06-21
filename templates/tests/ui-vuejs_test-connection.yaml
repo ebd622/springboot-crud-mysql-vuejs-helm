@@ -1,7 +1,8 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "{{ include "springboot-crud-mysql-vuejs-helm.fullname" . }}-test-connection"
+  #name: "{{ include "springboot-crud-mysql-vuejs-helm.fullname" . }}-test-connection"
+  name: "ui-vuejs-test-connection"
   labels:
     {{- include "springboot-crud-mysql-vuejs-helm.labels" . | nindent 4 }}
   annotations:
@@ -11,5 +12,6 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args: ['{{ include "springboot-crud-mysql-vuejs-helm.fullname" . }}:{{ .Values.service.port }}']
+      #args: ['{{ include "springboot-crud-mysql-vuejs-helm.fullname" . }}:{{ .Values.service.port }}']
+      args: ['ui-vuejs']
   restartPolicy: Never
