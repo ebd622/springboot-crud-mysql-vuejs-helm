@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: ui-vuejs
   name: ui-vuejs
@@ -13,7 +12,6 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: ui-vuejs
     spec:
@@ -22,7 +20,6 @@ spec:
         - mvn
         - clean
         - spring-boot:run
-        image: ebd622/ui-vuejs-k8:0.0.2
+        image: {{ .Values.uiVuejs.image.repository }}:{{.Values.uiVuejs.image.tag}}
         name: ui-vuejs-k8
         resources: {}
-status: {}

@@ -15,6 +15,11 @@ crudAPI:
     repository: ebd622/crud-api-k8
     tag: 0.0.2
 
+uiVuejs:
+  image:
+    repository: ebd622/ui-vuejs-k8
+    tag: 0.0.2
+
 replicaCount: 1
 
 image:
