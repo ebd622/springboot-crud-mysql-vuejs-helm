@@ -20,13 +20,6 @@ uiVuejs:
     repository: ebd622/ui-vuejs-k8
     tag: 0.0.2
 
-replicaCount: 1
-
-image:
-  repository: nginx
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
 
 imagePullSecrets: []
 nameOverride: ""
