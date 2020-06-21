@@ -10,13 +10,14 @@ cd springboot-crud-mysql-vuejs-helm
 ```
 
 **2. Install chart**
+
 Run the following command just to see a generated templates (no deployment):
 
 ```
 helm install crud-app --dry-run .
 ```
 
-Install the cart:
+Install the chart:
 ```
 helm install crud-app .
 ```
