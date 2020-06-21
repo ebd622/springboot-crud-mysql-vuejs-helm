@@ -22,7 +22,7 @@ spec:
         - mvn
         - clean
         - spring-boot:run
-        image: ebd622/crud-api-k8:0.0.2
+        image: {{ .Values.crudAPI.image.repository }}:{{.Values.crudAPI.image.tag}}
         name: crud-api-k8
         resources: {}
 status: {}

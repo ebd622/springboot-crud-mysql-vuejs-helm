@@ -10,6 +10,11 @@ secret:
 cm:
   roothost: '%'
 
+crudAPI:
+  image:
+    repository: ebd622/crud-api-k8
+    tag: 0.0.2
+
 replicaCount: 1
 
 image:
