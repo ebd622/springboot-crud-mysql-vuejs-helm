@@ -1,6 +1,9 @@
 # springboot-crud-mysql-vuejs-helm
 This is a helm-chart example for the [springboot-crud-mysql-vuejs-k8](https://github.com/ebd622/springboot-crud-mysql-vuejs-k8) project.
 
+**Prerequisites**: An [ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers) must be deployed in a cluster, otherwise an Ingress resource has no effect. For example, [Nginx ingress controller](https://docs.nginx.com/nginx-ingress-controller/installation/) can be deployed.
+
+
 **1. Clone the repository**
 ```
 git clone https://github.com/ebd622/springboot-crud-mysql-vuejs-helm.git
